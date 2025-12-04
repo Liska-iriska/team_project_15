@@ -1,0 +1,43 @@
+.feedback-section {
+
+}
+
+.feedback-section > .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-title {
+
+}
+
+.feedback-list {
+
+}
+
+.feedback-list-item {
+
+}
+
+.rating-list {
+    display: flex;
+    gap: 4px;
+    fill: #3AC04C;
+    margin-bottom: 12px;
+}
+
+.rating-list-item {
+
+}
+
+.star-icon {
+
+}
+
+.feedback-item-content {
+
+}
+
+.feedback-item-title {
+
+}

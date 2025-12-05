@@ -148,3 +148,26 @@
     margin-bottom: 0;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    padding: 80px 0;
+  }
+
+  .footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon-footer {
+    width: 24px;
+    height: 24px;
+  }
+
+  .social-footer-link {
+    width: 24px;
+    height: 24px;
+  }
+}

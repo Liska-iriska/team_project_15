@@ -1,9 +1,10 @@
-.feedback-section {}
+.feedback-section {
+    padding: 32px 0;
+}
 
 .feedback-section>.container {
     display: flex;
     flex-direction: column;
-    padding: 32px 15px;
     color: #030a06;
 }
 
@@ -57,9 +58,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .feedback-section > .container {
-        padding: 64px 15px;
-    }
 
     .feedback-title {
         width: 560px;
@@ -73,7 +71,6 @@
     }
         
     .feedback-list-item {
-        max-width: 340px;
         flex-basis: calc((100% - 24px) / 2);
     }
 
@@ -103,7 +100,6 @@
         display: flex;
         flex-direction: column;
 
-        max-width: 310px;
         flex-basis: calc((100% - 72px) / 4);
     }
 

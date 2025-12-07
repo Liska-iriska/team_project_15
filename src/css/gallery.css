@@ -1,0 +1,43 @@
+.section-gallery {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: #ebf8ed;
+
+}
+
+.gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-gallery {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    max-width: 288px;
+    text-align: center;
+    color: #030a06;
+    margin-bottom: 16px;
+}
+
+.second-title-gallery {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #030a06;
+    margin-bottom: 32px;
+}
+
+.list-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item-gallery {
+    overflow: hidden;
+    border-radius: 32px;
+}

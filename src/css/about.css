@@ -8,13 +8,13 @@ background-size: cover;
 background-repeat: no-repeat;
 
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), rgba(3, 10, 6, 0.4)),
-url("./img/about-mobile@1x.jpg");
+url(/img/about_img/mobile/about-mobile@1x.jpg);
 }
 
 @media (min-resolution: 2x) {
 .section-about{
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
-rgba(3, 10, 6, 0.4)), url("./img/about-mobile@2x.jpg");
+rgba(3, 10, 6, 0.4)), url(/img/about_img/mobile/about-mobile@2x.jpg);
 }
 }
 .title-container{
@@ -65,7 +65,7 @@ padding-block: 80px;
 padding-inline: 32px;
 
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
- rgba(3, 10, 6, 0.4)), url("./img/about-tablet@1x.jpg");
+ rgba(3, 10, 6, 0.4)), url(/img/about_img/tablet/about-tablet@1x.jpg);
 background-repeat: no-repeat;
 background-position: center; 
 background-size: cover;
@@ -75,7 +75,7 @@ background-size: cover;
 .section-about{
 
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
- rgba(3, 10, 6, 0.4)), url("./img/about-tablet@2x.jpg");
+ rgba(3, 10, 6, 0.4)), url(/img/about_img/tablet/about-tablet@2x.jpg);
 }
 }
 .title-naturalness{
@@ -98,7 +98,7 @@ max-width: 573px;
 max-width: 1440px;
 
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
- rgba(3, 10, 6, 0.4)), url(".img/about-desktop@1x.jpg");
+ rgba(3, 10, 6, 0.4)), url(/img/about_img/desktop/about-desktop@1x.jpg);
 background-repeat: no-repeat;
 background-position: center; 
 background-size: cover;
@@ -108,7 +108,7 @@ background-size: cover;
 .section-about{
  
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
- rgba(3, 10, 6, 0.4)), url("./img/about-desktop@2x.jpg");
+ rgba(3, 10, 6, 0.4)), url(/img/about_img/desktop/about-desktop@2x.jpg);
 }
 }
 

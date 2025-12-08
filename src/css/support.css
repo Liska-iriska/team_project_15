@@ -1,0 +1,238 @@
+/* #region mobile */
+.container-support {
+    padding: 32px 16px;
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    margin-bottom: 24px;
+}
+
+.support-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #030a06;
+}
+
+.support-description {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #030a06;
+    margin-top: 24px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    background-color: rgba(3, 10, 6, 0.05);
+    border-radius: 6px;
+    padding: 8px 12px;
+    height: 42px;
+}
+
+.form-input-last {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    background-color: rgba(3, 10, 6, 0.05);
+    border-radius: 6px;
+    padding: 12px;
+    height: 180px;
+    resize: none;
+}
+
+.form-button {
+    border: 1px solid rgb(3, 10, 6);
+    background-color: #030A06;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 12px 24px;
+    width: 288px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+
+/* #endregion mobile */
+
+/* #region image */
+.image-support {
+    border-radius: 40px;
+    width: 100%;
+    height: 428px;
+    background-image: url(../img/support_img/mobile/img_1@1x.jpg);
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .image-support {
+        background-image: url(../img/support_img/mobile/img_1@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .image-support {
+        max-width: 768px;
+        background-image: url(../img/support_img/tablet/img_1@1x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) and (min-resolution: 192dpi) {
+    .image-support {
+        background-image: url(../img/support_img/tablet/img_1@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .image-support {
+        max-width: 1440px;
+        background-image: image-set(url(../img/support_img/desktop/img_1@1x.jpg) 1x,
+                url(../img/support_img/desktop/img_1@2x.jpg) 2x);
+    }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .image-support {
+        background-image: url(../img/support_img/mobile/img_1@1x.jpg);
+    }
+}
+
+/* #endregion image */
+
+/* #region tablet */
+@media only screen and (min-width: 768px) {
+    .container-support {
+        max-width: 768px;
+        padding: 64px 32px;
+    }
+
+    .support-title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 249px;
+    }
+
+}
+
+/* #endregion tablet */
+
+/* #region desktop */
+
+@media only screen and (min-width: 1440px) {
+    .container-support {
+        display: flex;
+        flex-direction: row;
+        max-width: 1440px;
+        gap: 32px;
+        padding: 64px;
+    }
+
+    .form-button {
+        width: 198px;
+    }
+
+    .head {
+        width: 100%;
+        flex: 0 0 50%;
+    }
+
+    .image-support {
+        flex: 1 0 50%;
+        height: 767px;
+    }
+
+    .support-title {
+        font-size: 48px;
+    }
+}
+
+/* #endregion desktop */
+/* #region valid */
+.form-input::placeholder {
+    color: black;
+}
+
+
+.form-input:focus {
+    border-color: brown;
+}
+
+
+.form-input:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+.form-input:not(:placeholder-shown):valid {
+    border-color: green;
+}
+
+.text-valid,
+.text-invalid {
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 4px;
+    display: none;
+}
+
+.text-valid {
+    color: green;
+}
+
+.text-invalid {
+    color: red;
+}
+
+
+.form-input:not(:placeholder-shown):valid~.text-valid {
+    display: block;
+}
+
+.form-input:not(:placeholder-shown):invalid~.text-invalid {
+    display: block;
+}
+
+.form-button:is(:hover, :focus) {
+    border-color: brown;
+}
+
+/* #endregion valid */

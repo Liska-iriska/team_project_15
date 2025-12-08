@@ -24,6 +24,8 @@
 }
 
 .second-title-gallery {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
     text-align: center;
@@ -106,6 +108,10 @@
 
     .eco {
         order: 0;
+    }
+
+    .sing {
+        order: 1;
     }
 
     .img-eco,

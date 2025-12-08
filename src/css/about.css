@@ -22,7 +22,7 @@ text-align: center;
 }
 .about-container{
 text-align: center;     
-margin: 16 64 16 64;  
+margin: 16 64 16 64;
 }
 .title-naturalness{
 font-weight: 600;
@@ -30,7 +30,7 @@ font-size: 16px;
 line-height: 1.5;
 text-align: center;
 color: #fff;
-margin: 0 auto 64px auto;
+margin: 0 auto 64px auto;;
 font-family: "Fira Sans", sans-serif;
 
 }
@@ -52,9 +52,6 @@ font-size: 16px;
 line-height: 1.6;
 text-align: center;
 color: #fff;
-margin-bottom: 64px;
-margin-left: 16px;
-margin-right: 16px;
 font-family: "Fira Sans", sans-serif;
 }
 
@@ -71,7 +68,7 @@ background-position: center;
 background-size: cover;
 } 
 
-@media (min-resolution: 2x) {
+ @media (min-resolution: 2x) {
 .section-about{
 
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
@@ -112,7 +109,7 @@ background-image: linear-gradient(rgba(3, 10, 6, 0.4),
 }
 }
 
-.title-containe{
+.title-container{
 margin-bottom: 112px;
 }
 .about-container{

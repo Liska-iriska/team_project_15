@@ -114,6 +114,7 @@
         width: 704px;
         height: 416px;
         object-fit: cover;
+        margin-bottom: 32px;
     }
 
     .advantages-list-item:nth-child(3) {
@@ -180,7 +181,6 @@
 
     .advantages-img, .advantages-third-img{
         border-radius: 32px;
-        margin-bottom: 32px;
         width: 421px;
         height: 249px;
     }

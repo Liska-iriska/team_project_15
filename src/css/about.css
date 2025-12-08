@@ -11,7 +11,7 @@ background-image: linear-gradient(rgba(3, 10, 6, 0.4), rgba(3, 10, 6, 0.4)),
 url(/img/about_img/mobile/about-mobile@1x.jpg);
 }
 
-@media (min-resolution: 2x) {
+ @media screen and (max-width:767px) and (min-resolution:192dpi) {
 .section-about{
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
 rgba(3, 10, 6, 0.4)), url(/img/about_img/mobile/about-mobile@2x.jpg);
@@ -68,7 +68,7 @@ background-position: center;
 background-size: cover;
 } 
 
- @media (min-resolution: 2x) {
+ @media screen and (min-width:768px) and (min-resolution:192dpi) {
 .section-about{
 
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
@@ -82,9 +82,11 @@ margin-bottom: 16px;
 
 .about-title{
 padding-bottom: 24px;
+
 }
 
 .title-description{
+margin-left: 98px;    
 margin-bottom: 80px;
 max-width: 573px;
 }
@@ -101,16 +103,16 @@ background-position: center;
 background-size: cover;
 }
 
-@media (min-resolution: 2x) {
+@media screen and (min-width: 1158px) and (min-resolution:192dpi) {
 .section-about{
  
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
  rgba(3, 10, 6, 0.4)), url(/img/about_img/desktop/about-desktop@2x.jpg);
 }
 }
-
 .title-container{
-margin-bottom: 112px;
+margin-bottom: 16px;
+
 }
 .about-container{
 margin-left: 336px;
@@ -130,8 +132,6 @@ max-width: 629px;
 }
 
 .title-description{
-margin-left: 18px;    
-margin-bottom: 94px;
 max-width: 573px;
 }
 }

@@ -1,11 +1,11 @@
 .section-gallery {
     padding-top: 32px;
     padding-bottom: 32px;
-    background: #ebf8ed;
 
 }
 
 .gallery {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

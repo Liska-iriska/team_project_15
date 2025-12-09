@@ -52,6 +52,10 @@
   border-color: #113916;
 }
 
+.hero-descr-link {
+  margin-bottom: 24px;
+}
+
 picture,
 img {
   border-radius: 40px;

@@ -1,15 +1,16 @@
 /* #region mobile */
+.container-support {
+    padding: 32px 0;
+}
 .content{
-    padding: 32px 16px;
+    padding: 0 16px;
     max-width: 320px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.container-support .container {
-    gap: 24px;
-}
+
 .support-title {
     font-family: "Comfortaa", sans-serif;
     font-weight: 700;
@@ -89,6 +90,7 @@
 .image-support {
     border-radius: 40px;
     width: 100%;
+    height: 428px;
     background-image: url(/img/support_img/mobile/img_1@1x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,6 +119,7 @@
 @media screen and (min-width: 1440px) {
     .image-support {
         max-width: 1440px;
+        height: 767px;
         background-image: url(/img/support_img/desktop/img_1@1x.jpg) ;
     }
 }
@@ -124,6 +127,7 @@
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
     .image-support {
         background-image: url(/img/support_img/desktop/img_1@2x.jpg);
+        height: 767px;
     }
 }
 
@@ -131,11 +135,14 @@
 
 /* #region tablet */
 @media  screen and (min-width: 768px) {
+    .container-support {
+        padding: 64px 0;
+    }
     .content {
         max-width: 768px;
-        padding: 64px 32px;
+        padding: 0 32px;
     }
-
+    
     .support-title {
         display: flex;
         flex-direction: column;
@@ -156,12 +163,15 @@
 /* #region desktop */
 
 @media  screen and (min-width: 1440px) {
+    .container-support {
+        padding: 64px 0;
+    }
     .content {
         display: flex;
         flex-direction: row;
         max-width: 1440px;
         gap: 32px;
-        padding: 64px;
+        padding: 0 64px;
     }
 
     .form-button {

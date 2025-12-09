@@ -1,17 +1,20 @@
 /* Mobile version */
-
 .hero {
   width: 100%;
   padding: 64px 0;
 }
-
+.hero-link {
+  margin-bottom: 24px;
+}
+.hero-pic {
+  border-radius: 40px;
+  overflow: hidden;
+}
 .hero-container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
-
 .hero-title {
   font-family: Comfortaa, serif;
   font-weight: 700;
@@ -20,7 +23,6 @@
   letter-spacing: 0.01em;
   color: #030a06;
 }
-
 .hero-description {
   font-family: Fira sans, serif;
   font-weight: 400;
@@ -30,7 +32,6 @@
   margin-top: 20px;
   margin-bottom: 24px;
 }
-
 .hero-link {
   height: 50px;
   width: 288px;
@@ -45,35 +46,21 @@
   align-items: center;
   justify-content: center;
 }
-
 .hero-link:active {
   background-color: #113916;
   opacity: 0.6;
   border-color: #113916;
 }
-
-.hero-descr-link {
-  margin-bottom: 24px;
-}
-
-picture,
-img {
-  border-radius: 40px;
-  max-width: 100%;
-}
-
 /* Tablet version */
 @media only screen and (min-width: 768px) {
   .hero {
     padding-top: 32px;
     padding-bottom: 64px;
   }
-
   .hero-container {
     flex-wrap: wrap;
     flex-direction: row;
   }
-
   .hero-text-link {
     display: flex;
     flex-direction: row;
@@ -81,7 +68,6 @@ img {
     height: auto;
     margin-bottom: 20px;
   }
-
   .hero-descr-link {
     height: auto;
     display: flex;
@@ -89,52 +75,42 @@ img {
     align-items: flex-start;
     justify-content: flex-start;
   }
-
   .hero-title {
     max-width: 340px;
   }
-
   .hero-description {
     margin-top: 0;
     margin-bottom: 32px;
   }
-
   .hero-link {
     width: 148px;
-  }
-
-  picture,
-  img {
-    margin-top: 0;
+    margin-bottom: 0;
   }
 }
-
 /* Desktop version */
 @media only screen and (min-width: 1440px) {
   .hero-container {
     flex-wrap: wrap;
     flex-direction: row;
   }
-
+  .hero-text-link {
+    gap: 32px;
+  }
   .hero-descr-link {
-    max-width: 640px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
-
   .hero-title {
     font-size: 56px;
     max-width: 640px;
     text-align: left;
   }
-
   .hero-description {
     font-size: 18px;
   }
-
   .hero-link:hover,
   .hero-link:focus {
     background-color: #030a06;

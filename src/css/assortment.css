@@ -1,0 +1,155 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.assortment {background: #ebf8ed;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.assortment-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.assortment-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.assortment-img {
+    width: 100%;
+    max-width: 288px;
+    height: auto;
+    border-radius: 32px;
+}
+
+.assortment-group {
+    height: 113px;
+    margin: 16px 0;
+}
+
+
+.assortment-main-title {
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+    margin-bottom: 32px;
+    text-transform: capitalize;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.01em;
+        color: #030a06;
+}
+
+.assortment-title {
+    text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #030a06;
+}
+
+.assortment-text {
+    text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #030a06;
+        margin-bottom: 8px;
+}
+
+.assortment-price {
+    text-align: center;
+    font-weight: 600;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #030a06;
+}
+
+.assortment-btn {
+    display: block;
+    padding: 8px 0;
+    width: 288px;
+    height: 40px;
+    border: none;
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 1px solid #030a06;
+    border-radius: 6px;
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.assortment-btn:hover {opacity: 0.5;}
+.assortment-btn:focus {opacity: 0.5;}
+
+.assortment-btn:active {
+    border: 1px solid #113916;
+    opacity: 0.6;
+}
+
+.assortment-btn:disabled {
+ opacity: 0.2;
+}
+
+@media screen and (min-width: 768px) {
+    .assortment {
+            padding-top: 64px;
+            padding-bottom: 64px;
+    }
+.assortment-list {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 48px;
+}
+.assortment-item {
+    width: calc((100% - 24px) /2);
+}
+.assortment-container {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+.assortment-img {
+    max-width: 340px;
+}
+.assortment-btn {
+    width: 340px;
+    padding: 7px 0;
+}
+}
+
+@media screen and (min-width: 1158px) {
+    
+.assortment-container {
+    max-width: 1158px;
+    margin: auto;
+    padding-right: 64px;
+    padding-left: 64px;
+}
+.assortment-list {
+    margin: 0;
+    column-gap: 24px;
+    row-gap: 64px;
+}
+.assortment-main-title {
+    font-size: 48px;
+}
+.assortment-img {
+   max-width: 310px;
+    }
+.assortment-item {
+    width: calc((100% - 72px) /4);
+}
+.assortment-btn {
+    width: auto;
+}
+}

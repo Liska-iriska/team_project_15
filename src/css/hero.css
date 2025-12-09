@@ -52,12 +52,6 @@
   border-color: #113916;
 }
 
-picture,
-img {
-  border-radius: 40px;
-  max-width: 100%;
-}
-
 /* Tablet version */
 @media only screen and (min-width: 768px) {
   .hero {

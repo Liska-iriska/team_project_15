@@ -55,7 +55,6 @@
 picture,
 img {
   border-radius: 40px;
-  margin-top: 24px;
   max-width: 100%;
 }
 
@@ -126,6 +125,10 @@ img {
     font-size: 56px;
     max-width: 640px;
     text-align: left;
+  }
+
+  .hero-description {
+    font-size: 18px;
   }
 
   .hero-link:hover,

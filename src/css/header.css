@@ -1,11 +1,12 @@
 .page-header{
     background-color: #75D281;
+    height: 64px;
 }
 .header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
+
 }
 .nav-list, .contacts{
     display: none;
@@ -21,7 +22,6 @@
 .burger-btn{
     display: flex;
     align-items: center;
-    padding: 0;
     border: none;
     background-color: transparent;
 }
@@ -35,10 +35,6 @@
     }
     .burger-btn{
         display: none;
-    }
-    .header-logo{
-        width: 106px;
-        height: 45px;
     }
     .nav-list{
         display: flex;

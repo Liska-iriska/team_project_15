@@ -36,6 +36,22 @@
   justify-content: center;
 }
 
+.nav-list-link {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list-link:focus,
+.nav-list-link:hover {
+  border-bottom: 1px solid #030a06;
+}
+
+.nav-list-link:active {
+  border-bottom: 1px solid #3ac04c;
+  color: #3ac04c;
+}
+
 .social-footer-wrapper {
   margin: 0 auto;
 }
@@ -49,6 +65,8 @@
   display: flex;
   gap: 12px;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-footer {

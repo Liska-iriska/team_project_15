@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 320px;
+    width: 320px;
     padding: 0 16px;
 }
 
@@ -50,7 +50,7 @@
 @media only screen and (min-width: 768px) {
 
     .gallery {
-        max-width: 768px;
+        width: 768px;
         padding: 0 32px;
     }
 
@@ -99,7 +99,7 @@
 @media only screen and (min-width: 1440px) {
 
     .gallery {
-        max-width: 1440px;
+        width: 1440px;
         padding: 0 64px;
     }
 

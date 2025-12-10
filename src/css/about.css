@@ -99,7 +99,9 @@ margin-bottom: 64px;
         .title-description {
             
             font-size: 18px;
-
+        }
+        .about-title br {
+          display: block;
         }
 }
 

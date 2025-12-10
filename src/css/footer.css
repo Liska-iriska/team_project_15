@@ -36,6 +36,38 @@
   justify-content: center;
 }
 
+.nav-list-link {
+  position: relative;
+  outline: none;
+
+}
+
+.nav-list-link:hover::after,
+.nav-list-link:focus::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  background-color: #030a06;
+}
+
+.nav-list-link:active {
+  color: #3ac04c;
+
+}
+
+.nav-list-link:active:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  background-color: #3ac04c;
+}
+
 .social-footer-wrapper {
   margin: 0 auto;
 }

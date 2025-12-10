@@ -64,7 +64,7 @@ outline:none;
   bottom: -10px;
   height: 2px;
   background-color: #030a06;
-  fill: #030a06;
+
 }
 
 .nav-list-link:active,
@@ -72,8 +72,15 @@ outline:none;
 .address-footer-link:active, 
 .social-footer-li:active {
   color: #3ac04c;
-  fill: #030a06;
 
+}
+.icon-footer:hover, 
+.icon-footer:focus {
+      fill:  #030a06;
+}
+
+.icon-footer:active {
+       fill: #3ac04c;
 }
 
 .nav-list-link:active:after,

@@ -1,14 +1,16 @@
 .section-gallery {
     padding-top: 32px;
     padding-bottom: 32px;
-    background: #ebf8ed;
 
 }
 
 .gallery {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    
 }
 
 .title-gallery {
@@ -46,6 +48,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+
+    .gallery {
+        
+        padding: 0 32px;
+    }
 
     .section-gallery {
         padding-top: 64px;
@@ -90,6 +97,11 @@
 }
 
 @media only screen and (min-width: 1440px) {
+
+    .gallery {
+        
+        padding: 0 64px;
+    }
 
     .title-gallery {
         max-width: 768px;

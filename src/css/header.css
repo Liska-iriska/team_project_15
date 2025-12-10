@@ -14,14 +14,36 @@
   display: none;
 }
 
-.nav-items:focus,
-.nav-items:hover {
-  border-bottom: 1px solid #030A06;
+.nav-link {
+  position: relative;
+  outline: none;
+
 }
 
-.nav-items:active {
-  border-bottom: 1px solid #3AC04C;
-  color: #3AC04C;
+.nav-link:hover::after,
+.nav-link:focus::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  background-color: #030a06;
+}
+
+.nav-link:active {
+  color: #3ac04c;
+
+}
+
+.nav-link:active:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  background-color: #3ac04c;
 }
 
 .header-logo {

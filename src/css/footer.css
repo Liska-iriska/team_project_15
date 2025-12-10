@@ -39,7 +39,6 @@
 .nav-list-link {
   position: relative;
   outline: none;
-
 }
 
 .nav-list-link:hover::after,

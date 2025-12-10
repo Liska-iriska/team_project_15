@@ -118,9 +118,7 @@
 .assortment-item {
     width: calc((100% - 24px) /2);
 }
-.container {
-    padding: 0 32px;
-}
+
 .assortment-img {
     max-width: 340px;
 }
@@ -132,12 +130,10 @@
 
 @media screen and (min-width: 1440px) {
 
-.container {
-    padding: 0 64px;
-}
+
     
 .assortment-container {
-    max-width: 1440px;
+    padding: 64px 0;
     margin: auto;
 }
 .assortment-list {

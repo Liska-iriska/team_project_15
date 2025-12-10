@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.advantages-name {
+  margin-bottom: 12px;
+}
+
 .advantages-title {
   font-family: 'Comfortaa';
   font-weight: 700;

@@ -42,7 +42,15 @@
 }
 
 .nav-list-link:hover::after,
-.nav-list-link:focus::after {
+.nav-list-link:focus::after,
+.contacts-link:hover::after,
+.contacts-link:focus::after,
+.address-footer-link:hover::after,
+.address-footer-link:focus::after,
+.icon-footer:hover::after,
+.icon-footer:focus::after
+
+{
   content: "";
   width: 100%;
   position: absolute;
@@ -52,12 +60,19 @@
   background-color: #030a06;
 }
 
-.nav-list-link:active {
+.nav-list-link:active,
+.contacts-link:active,
+.address-footer-link:active, 
+.icon-footer:active {
   color: #3ac04c;
 
 }
 
-.nav-list-link:active:after {
+.nav-list-link:active:after,
+.contacts-link:active:after,
+.address-footer-link:active:after,
+.icon-footer:active:after
+{
   content: "";
   width: 100%;
   position: absolute;

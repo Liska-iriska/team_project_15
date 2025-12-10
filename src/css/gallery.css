@@ -1,0 +1,128 @@
+.section-gallery {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: #ebf8ed;
+
+}
+
+.gallery {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-gallery {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    max-width: 288px;
+    text-align: center;
+    color: #030a06;
+    margin-bottom: 16px;
+}
+
+.second-title-gallery {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #030a06;
+    margin-bottom: 32px;
+}
+
+.list-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 16px;
+}
+
+.item-gallery {
+    overflow: hidden;
+    border-radius: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .section-gallery {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .title-gallery {
+        max-width: 704px;
+        margin-bottom: 24px;
+    }
+    
+    .list-gallery {
+       flex-direction: column;
+       max-height: 1062px;
+       row-gap: 24px;
+       column-gap: 26px;
+    }   
+
+    .classic {
+        order: -2;
+    }
+
+    .eco {
+        order: 2;
+    }
+
+    .casual {
+        order: 1;
+    }
+
+    .img-eco,
+    .img-classic {
+        width: 338px;
+        height: 338px;
+    }
+
+    .img-casual,
+    .img-sing {
+        width: 340px;
+        height: 700px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .title-gallery {
+        max-width: 768px;
+        font-size: 48px;
+    }
+
+    .list-gallery {
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+
+    .item-gallery {
+        width: auto;
+        height: auto;
+    }
+
+    .eco {
+        order: 0;
+    }
+
+    .sing {
+        order: 1;
+    }
+
+    .img-eco,
+    .img-classic {
+        width: 421px;
+        height: 421px;
+    }
+
+    .img-casual,
+    .img-sing {
+        width: 421px;
+        height: 865px;
+    }
+}

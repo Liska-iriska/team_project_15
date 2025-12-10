@@ -1,0 +1,217 @@
+/* #region mobile */
+.content{
+    padding: 32px 16px;
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.container-support .container {
+    gap: 24px;
+}
+.support-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: #030a06;
+}
+
+.support-description {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #030a06;
+    margin-top: 24px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    background-color: rgba(3, 10, 6, 0.05);
+    border-radius: 6px;
+    padding: 8px 12px;
+    height: 42px;
+}
+
+.form-input-last {
+    border: 1px solid rgba(3, 10, 6, 0.15);
+    background-color: rgba(3, 10, 6, 0.05);
+    border-radius: 6px;
+    padding: 12px;
+    height: 180px;
+    resize: none;
+}
+
+.form-button {
+    border: 1px solid rgb(3, 10, 6);
+    background-color: #030A06;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 12px 24px;
+    width: 288px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+
+/* #endregion mobile */
+
+/* #region image */
+.image-support {
+    border-radius: 40px;
+    width: 100%;
+    background-image: url(/img/support_img/mobile/img_1@1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .image-support {
+        background-image: url(/img/support_img/mobile/img_1@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .image-support {
+        width: 100%;
+        background-image: url(/img/support_img/tablet/img_1@1x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .image-support {
+        background-image: url(/img/support_img/tablet/img_1@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .image-support {
+        max-width: 1440px;
+        background-image: url(/img/support_img/desktop/img_1@1x.jpg) ;
+    }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .image-support {
+        background-image: url(/img/support_img/desktop/img_1@2x.jpg);
+    }
+}
+
+/* #endregion image */
+
+/* #region tablet */
+@media  screen and (min-width: 768px) {
+    .content {
+        max-width: 768px;
+        padding: 64px 32px;
+    }
+
+    .support-title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 249px;
+    }
+
+}
+
+
+/* #endregion tablet */
+
+/* #region desktop */
+
+@media  screen and (min-width: 1440px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        max-width: 1440px;
+        gap: 32px;
+        padding: 64px;
+    }
+
+    .form-button {
+        width: 198px;
+    }
+
+    .head {
+        width: 100%;
+    }
+
+    .support-title {
+        font-size: 48px;
+    }
+}
+
+/* #endregion desktop */
+/* #region valid */
+.form-input::placeholder {
+    color: rgba(3, 10, 6, 0.6);;
+}
+.form-input:focus::placeholder, .form-input-last:focus::placeholder {
+    color: transparent;
+    transition: color 0.2s ease;
+}
+
+.form-input:focus, .form-input-last:focus {
+    outline: none;
+}
+
+.form-input:not(:placeholder-shown):invalid {
+    border-color: #D64040;
+}
+
+.text-invalid {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 4px;
+    display: none;
+}
+
+
+.text-invalid {
+    color: #D64040;
+}
+
+
+.form-input:not(:placeholder-shown):invalid~.text-invalid {
+    display: block;
+}
+
+
+/* #endregion valid */

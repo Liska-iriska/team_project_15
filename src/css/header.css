@@ -18,6 +18,11 @@
 
 }
 
+.contacts-item {
+position: relative;
+outline:none;
+}
+
 .nav-link:hover::after,
 .nav-link:focus::after {
   content: "";

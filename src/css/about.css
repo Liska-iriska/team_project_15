@@ -1,7 +1,6 @@
 
 .section-about {
-margin: auto;
-max-width: 320px;
+width: 100%;
 padding: 64px 16px;
 background-position: center;
 background-size: cover;
@@ -17,11 +16,10 @@ background-image: linear-gradient(rgba(3, 10, 6, 0.4),
 rgba(3, 10, 6, 0.4)), url(/img/about_img/mobile/about-mobile@2x.jpg);
 }
 }
-.title-container{
-text-align: center;    
-}
-.about-container{
-text-align: center;     
+.container{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .title-naturalness{
 font-weight: 600;
@@ -30,6 +28,7 @@ line-height: 1.5;
 text-align: center;
 color: #fff;
 font-family: "Fira Sans", sans-serif;
+margin-bottom: 12px;
 
 }
 .about-title{
@@ -39,9 +38,7 @@ line-height: 1.2;
 letter-spacing: 0.01em;
 text-align: center;
 color: #fff;
-margin-bottom: 12px;
-margin-left: 16px;
-margin-right: 16px;
+margin-bottom: 20px;
 font-family: "Comfortaa", sans-serif;
 }
 .title-description{
@@ -51,13 +48,11 @@ line-height: 1.6;
 text-align: center;
 color: #fff;
 font-family: "Fira Sans", sans-serif;
+margin-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
 .section-about{
-max-width: 768px;
-padding-block: 80px;
-padding-inline: 32px;
 
 background-image: linear-gradient(rgba(3, 10, 6, 0.4), 
  rgba(3, 10, 6, 0.4)), url(/img/about_img/tablet/about-tablet@1x.jpg);
@@ -73,18 +68,20 @@ background-image: linear-gradient(rgba(3, 10, 6, 0.4),
  rgba(3, 10, 6, 0.4)), url(/img/about_img/tablet/about-tablet@2x.jpg);
 }
 }
+.container{
+max-width: 768px;
+
+}
 .title-naturalness{
-margin-top: 80px;
 margin-bottom: 16px;
 }
 
 .about-title{
-padding-bottom: 24px;
+margin-bottom: 24px;
 
 }
 
-.title-description{
-margin-left: 98px;    
+.title-description{    
 margin-bottom: 80px;
 max-width: 573px;
 }
@@ -108,26 +105,17 @@ background-image: linear-gradient(rgba(3, 10, 6, 0.4),
  rgba(3, 10, 6, 0.4)), url(/img/about_img/desktop/about-desktop@2x.jpg);
 }
 }
-.title-container{
-margin-bottom: 16px;
-
-}
-.about-container{
-margin-left: 336px;
-margin-right: 336px; 
-max-width: 768px;
-max-height: 216px;
+.container{
+min-width: 1158px;   
 }
 .title-naturalness{
 margin-bottom: 16px;
 }
-
 .about-title{    
 margin-bottom: 24px;
 }
-
 .title-description{
 max-width: 573px;
-text-align: center;
+margin-bottom: 94px;
 }
 }

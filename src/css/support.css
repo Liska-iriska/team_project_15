@@ -3,8 +3,8 @@
     padding: 32px 0;
 }
 .content{
-    padding: 0 16px;
-    max-width: 320px;
+    
+  
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -138,10 +138,6 @@
     .container-support {
         padding: 64px 0;
     }
-    .content {
-        max-width: 768px;
-        padding: 0 32px;
-    }
     
     .support-title {
         display: flex;
@@ -169,7 +165,7 @@
     .content {
         display: flex;
         flex-direction: row;
-        max-width: 1440px;
+        
         gap: 32px;
         padding: 0 64px;
     }

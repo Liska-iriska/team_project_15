@@ -22,6 +22,7 @@
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: #030a06;
+  margin-bottom: 20px;
 }
 .hero-description {
   font-family: Fira sans, serif;
@@ -29,28 +30,36 @@
   font-size: 16px;
   line-height: 1.6;
   color: #030a06;
-  margin-top: 20px;
   margin-bottom: 24px;
 }
-.hero-link {
+.hero-btn {
   height: 50px;
   width: 288px;
+  padding: 0;
   background-color: #030a06;
   color: #fff;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  border: 1px solid #030a06;
+  border: none;
   border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
 }
-.hero-link:active {
-  background-color: #113916;
-  opacity: 0.6;
-  border-color: #113916;
+
+.hero-btn:focus,
+.hero-btn:hover {
+  outline: none;
+  background-color: rgba(3, 10, 6, 0.5);
 }
+
+.hero-btn:active {
+  background-color: rgba(17, 57, 22, 0.6);
+}
+
+
 /* Tablet version */
 @media only screen and (min-width: 768px) {
   .hero {
@@ -60,13 +69,14 @@
   .hero-container {
     flex-wrap: wrap;
     flex-direction: row;
+    row-gap: 20px;
   }
   .hero-text-link {
     display: flex;
     flex-direction: row;
     gap: 24px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   .hero-descr-link {
     height: auto;
@@ -77,24 +87,24 @@
   }
   .hero-title {
     max-width: 340px;
+    margin: 0;
   }
   .hero-description {
     margin-top: 0;
     margin-bottom: 32px;
   }
-  .hero-link {
+  .hero-btn {
     width: 148px;
     margin-bottom: 0;
   }
+
 }
 /* Desktop version */
 @media only screen and (min-width: 1440px) {
-  .hero-container {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
+  
   .hero-text-link {
     gap: 32px;
+    margin: 0;
   }
   .hero-descr-link {
     height: auto;

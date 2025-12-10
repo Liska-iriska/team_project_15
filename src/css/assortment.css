@@ -132,13 +132,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-
-
-    
-.assortment-container {
-    padding: 64px 0;
-    margin: auto;
-}
 .assortment-list {
     margin: 0;
     column-gap: 24px;

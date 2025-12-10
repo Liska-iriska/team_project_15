@@ -12,6 +12,14 @@ url(/img/about_img/mobile/about-mobile@1x.jpg);
 
 }
 
+.about-cont{
+  padding: 64px 16px;
+}
+
+.about-title br{
+  display: none;
+}
+
 .title-naturalness{
 font-weight: 600;
 font-size: 16px;
@@ -54,6 +62,16 @@ margin-bottom: 64px;
     background-image: linear-gradient(rgba(3, 10, 6, 0.4), rgba(3, 10, 6, 0.4)),
             url(/img/about_img/tablet/about-tablet@1x.jpg);
   }
+  .title-description {
+    font-size: 18px;
+  }
+  .title-naturalness {
+      margin-bottom: 16px;
+    }
+   .about-title {
+       margin-bottom: 24px;
+      }
+
 }
 @media screen and (min-width:768px) and (min-resolution:192dpi) {
     .section-about {
@@ -61,21 +79,30 @@ margin-bottom: 64px;
             url(/img/about_img/tablet/about-tablet@2x.jpg);
     }
 
-    .title-naturalness {
-        margin-bottom: 16px;
-    }
 
-    .about-title {
-        margin-bottom: 24px;
-    }
 }
 
 @media screen and (min-width:1440px) {
   .section-about {
+    padding-top: 112px;
+    padding-bottom: 94px;
     max-width: 1440px;
     background-image: linear-gradient(rgba(3, 10, 6, 0.4), rgba(3, 10, 6, 0.4)),
             url(/img/about_img/tablet/about-tablet@1x.jpg);
   }
+  
+        .about-title {
+          font-size: 56px;
+          margin-bottom: 24px;        
+        }
+
+        .title-description {
+            
+            font-size: 18px;
+        }
+        .about-title br {
+          display: block;
+        }
 }
 
 @media screen and (min-width:1440px) and (min-resolution:192dpi) {
@@ -85,15 +112,4 @@ margin-bottom: 64px;
     
         }
 
-        .about-title {
-            font-size: 56px;
-            width: 629px;
-            margin: 0 auto 24px;
-        }
-
-        .title-description {
-            
-            font-size: 18px;
-
-        }
 }

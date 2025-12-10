@@ -10,7 +10,11 @@
 }
 
 .advantages-name {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #030A06;
 }
 
 .advantages-title {
@@ -65,8 +69,6 @@
 
 /* #region tablet */
 @media screen and (min-width: 768px) {
- 
-
     .advantages-section{
         padding: 64px 0;
     }
@@ -132,80 +134,15 @@
         width: 100%;
     }
 
-
-  .advantages-name {
-    margin-bottom: 16px;
-  }
-
-  .advantages-title {
-    margin-bottom: 24px;
-    align-self: flex-start;
-  }
-
-  .advantages-text {
-    font-size: 18px;
-  }
-
-  .advantages-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-top: 32px;
-  }
-
-  .advantages-list-item {
-    flex-basis: calc((100% - 24px) / 2);
-    margin: 0;
-  }
-
-  .advantages-img {
-    margin-bottom: 32px;
-    width: 340px;
-    height: 201px;
-  }
-
-  .advantages-third-img {
-    width: 704px;
-    height: 416px;
-    object-fit: cover;
-    margin-bottom: 32px;
-  }
-
-  .advantages-list-item:nth-child(3) {
-    flex-basis: 100%;
-  }
-
-  .advantages-list-item-title {
-    margin-bottom: 8px;
-    width: 340px;
-  }
-
-  .advantages-list-item:nth-child(2) .advantages-list-item-title {
-    margin-bottom: 42px;
-  }
-
-  .advantages-list-item-text {
-    width: 340px;
-  }
-
-  .advantages-list-item:nth-child(3) .advantages-list-item-title,
-  .advantages-list-item:nth-child(3) .advantages-list-item-text {
-    width: 100%;
-  }
 }
 
 /* #endregion tablet */
 
 /* #region desktop */
 @media screen and (min-width: 1440px) {
-    .container {
 
     .advantages-section {
         padding: 64px 0;
-    }
-
-    .advantages-name {
-        margin-bottom: 16px;
     }
 
     .advantages-title {
@@ -247,6 +184,5 @@
     .advantages-list-item-text {
         width: 100%;
     }
-}
 }
 /* #endregion desktop */
